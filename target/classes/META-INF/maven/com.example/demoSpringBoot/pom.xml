@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>demoSpringBoot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>demoSpringBoot</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	
+  <repositories>
+  <repository>
+		<id>thirdparty</id>
+		<name>3rd party</name>
+		<url>http://172.16.8.51:8081/nexus/content/repositories/thirdparty</url>
+	</repository>
+</repositories>
+<!-- <repositories>
+    <repository>
+        <id>WASDev</id>
+        <name>WASDev Repository</name>
+        <url>http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/maven/repository/</url>
+    </repository>  
+ </repositories> -->
+
+	<dependencies>
+	
+	
+	 <dependency>
+  <groupId>com.ibm</groupId>
+  <artifactId>Jace</artifactId>
+  <version>5.1.0</version>
+</dependency>
+
+ <dependency>
+  <groupId>com.ibm</groupId>
+  <artifactId>pe</artifactId>
+  <version>5.2.1</version>
+</dependency>
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+<!-- 	 <dependency>
+                <groupId>com.ibm.websphere.ws</groupId>
+                <artifactId>com.ibm.ws.runtime</artifactId>
+                <version>1.0.0</version>
+                <type>jar</type>
+        </dependency>  -->
+ 
+ 
+<!--  <dependency>
+ <groupId>com.ibm</groupId>
+ <artifactId>com.ibm.ws.runtime</artifactId>
+ <version>7.0.0</version>
+<type>jar</type>
+</dependency> -->
+ 
+ 
+<!-- <dependency>
+     <groupId>com.sample</groupId>
+     <artifactId>sample</artifactId>
+     <version>1.0</version>
+     <scope>system</scope>
+     <systemPath>${project.basedir}/src/main/resources/Jace.jar</systemPath>
+     </dependency>
+
+		<dependency>
+    <groupId>com.sample</groupId>
+    <artifactId>sample</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/xlxpScannerUtils.jar</systemPath>
+</dependency>
+
+		
+		<dependency>
+    <groupId>com.sample</groupId>
+    <artifactId>sample</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/xlxpScanner.jar</systemPath>
+</dependency>
+		
+		<dependency>
+    <groupId>com.sample</groupId>
+    <artifactId>sample</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/stax-api.jar</systemPath>
+</dependency>
+		
+		<dependency>
+    <groupId>com.sample</groupId>
+    <artifactId>sample</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/pe.jar</systemPath>
+</dependency>
+		
+		<dependency>
+    <groupId>com.sample</groupId>
+    <artifactId>sample</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/peResources.jar</systemPath>
+</dependency>
+		
+				<dependency>
+    <groupId>com.sample</groupId>
+    <artifactId>sample</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/xml-apis.jar</systemPath> 
+</dependency> -->
+		
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
